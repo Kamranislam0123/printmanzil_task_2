@@ -78,7 +78,7 @@ const App = () => {
     <div className="flex items-center justify-center h-full bg-gray-100">
       <div className="flex flex-col items-center mr-4">
         <h1 className="text-xl font-bold mb-6 text-center">
-          Drag and drop your logo here & scroll up & down to adjust the t-shirt
+          Drag and drop your logo here & scroll up & down to adjust the logo
           to resize
         </h1>
         <div
