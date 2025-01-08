@@ -1,8 +1,7 @@
-# React + Vite
+# Steps for Resizing & Positioning
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Upload the logo by dragging and dropping it or selecting it from your device.
+- Scroll up to increase the size of the logo.
+- Scroll down to decrease the size of the logo.
+- Click on Submit And Download Design Button to get edited Image 
