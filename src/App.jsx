@@ -76,37 +76,43 @@ const App = () => {
 
   return (
     <div className="flex items-center justify-center h-full bg-gray-100">
-      <div
-        ref={tshirtRef}
-        className="relative border w-80 h-96 bg-white shadow-lg flex items-center justify-center mr-4"
-        onWheel={handleResize}
-      >
-        {/* T-Shirt Image */}
-        <img
-          src="/tshirt.png" // Replace with your default t-shirt image path
-          alt="T-Shirt"
-          className="w-full h-full object-contain"
-        />
-        {/* Logo Image */}
-        {logo && (
+      <div className="flex flex-col items-center mr-4">
+        <h1 className="text-xl font-bold mb-6 text-center">
+          Drag and drop your logo here & scroll up & down to adjust the t-shirt
+          to resize
+        </h1>
+        <div
+          ref={tshirtRef}
+          className="relative border w-80 h-96 bg-white shadow-lg flex items-center justify-center"
+          onWheel={handleResize}
+        >
+          {/* T-Shirt Image */}
           <img
-            src={logo}
-            alt="Logo"
-            style={{
-              position: "absolute",
-              top: `${position.y}px`,
-              left: `${position.x}px`,
-              width: `${size.width}px`,
-              height: `${size.height}px`,
-              cursor: "move",
-            }}
-            draggable
-            onDragStart={handleDragStart}
-            onDrag={handleDrag}
-            onDragEnd={handleDragEnd}
-            className="shadow-md"
+            src="/tshirt.png" // Replace with your default t-shirt image path
+            alt="T-Shirt"
+            className="w-full h-full object-contain"
           />
-        )}
+          {/* Logo Image */}
+          {logo && (
+            <img
+              src={logo}
+              alt="Logo"
+              style={{
+                position: "absolute",
+                top: `${position.y}px`,
+                left: `${position.x}px`,
+                width: `${size.width}px`,
+                height: `${size.height}px`,
+                cursor: "move",
+              }}
+              draggable
+              onDragStart={handleDragStart}
+              onDrag={handleDrag}
+              onDragEnd={handleDragEnd}
+              className="shadow-md"
+            />
+          )}
+        </div>
       </div>
       <div className="flex flex-col items-center">
         <div
@@ -118,9 +124,9 @@ const App = () => {
         </div>
         <button
           onClick={handleDownload}
-          className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
+          className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 mb-4"
         >
-          Submit & Download Design
+         Submit And Download Design
         </button>
       </div>
     </div>
